@@ -1,4 +1,4 @@
-angular.module("AngularMaterialDemo",['ngMaterial'])
-    .run(function(){
+angular.module("AngularMaterialDemo", ['ngMaterial'])
+    .run(function () {
         console.log("loaded successfully");
     });

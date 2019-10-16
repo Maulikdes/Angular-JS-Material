@@ -1,0 +1,40 @@
+<md-toolbar>
+    <h1>Angular Material Starter</h1>
+</md-toolbar>
+<md-nav-bar>
+    <md-nav-item md-nav-click="goto('page1')" name="page1">Page One</md-nav-item>
+    <md-nav-item md-nav-sref="app.page2" name="page2">Page Two</md-nav-item>
+    <md-nav-item md-nav-href="#page3" name="page3">Page Three</md-nav-item>
+</md-nav-bar>
+<section layout="row" flex="" class="container" >
+    <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
+        <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools">Sidenav Left</h1>
+        </md-toolbar>
+        <md-list>
+            <md-list-item ng-click="abc()" >
+                    <img class="md-avatar" ng-src="https://www.svgrepo.com/show/95333/avatar.svg">
+                    <span>Item content in list</span>
+            </md-list-item>
+            <md-list-item ng-click="abc()" >
+                    <img class="md-avatar" ng-src="https://www.svgrepo.com/show/95333/avatar.svg">
+                    <span>Item content in list</span>
+            </md-list-item>
+            <md-list-item ng-click="abc()" >
+                    <img class="md-avatar" ng-src="https://www.svgrepo.com/show/95333/avatar.svg">
+                    <span>Item content in list</span>
+            </md-list-item>
+        </md-list>
+    </md-sidenav>
+    <md-content flex="" layout-padding="">
+        <div layout="column" layout-align="top center">
+            <p>
+                The left sidenav will 'lock open' on a medium (˃=960px wide) device.
+            </p>
+            <p>
+                The right sidenav will focus on a specific child element.
+            </p>
+        </div>
+        <div flex=""></div>
+    </md-content>
+</section>
